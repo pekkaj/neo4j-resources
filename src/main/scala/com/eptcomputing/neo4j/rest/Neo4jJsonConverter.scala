@@ -9,7 +9,8 @@ import org.codehaus.jettison.json.{JSONObject, JSONArray, JSONException}
 /**
  * Provides helpers for converting Neo4j nodes to/from JSON.
  */
-object Neo4jJsonConverter extends IteratorConverters {
+object Neo4jJsonConverter {
+  import scala.collection.JavaConversions._
 
   private val log = Logger.getLogger(this.getClass.getName)
 

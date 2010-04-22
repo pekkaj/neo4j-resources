@@ -104,7 +104,8 @@ abstract class Neo4jResource extends RequiredParam {
  * Simple default implementation of a CRUD resource which maps to a single Neo4j node.
  * See <tt>Neo4jJsonConverter</tt> for the format used.
  */
-class SimpleNeo4jResource extends Neo4jResource with IteratorConverters {
+class SimpleNeo4jResource extends Neo4jResource {
+  import scala.collection.JavaConversions._
 
   def create(neo: GraphDatabaseService, json: JSONObject) =
     jsonToNeo(json, neo, null)
