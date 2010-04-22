@@ -1,6 +1,8 @@
 Neo4j resources library
 =======================
 
+Please note that this is an experimental version of neo4j-resources library for Scala 2.8.0 Beta1.
+
 The Neo4j resources library allows you to build an application which stores its data in
 the [http://neo4j.org/](Neo4j open source graph database) and exposes it through a
 domain-specific RESTful JSON API which you define. It is written in Scala and is intended
@@ -22,13 +24,6 @@ You need a Java 5 (or newer) environment and Maven 2.0.9 (or newer) installed:
     Java version: 1.6.0_03-p3
     OS name: "darwin" version: "9.7.0" arch: "i386" Family: "unix"
 
-Install the [JUnit4 Runner for ScalaTest](http://github.com/teigen/scalatest-junit4runner/tree/master)
-as follows:
-
-    $ git clone git://github.com/teigen/scalatest-junit4runner.git
-    $ cd scalatest-junit4runner
-    $ mvn clean install
-
 With that dependency manually resolved, you should now be able to do a full build of
 `neo4j-resources`:
 
@@ -42,10 +37,10 @@ To use this library in your projects, add the following to the `dependencies` se
     <dependency>
       <groupId>com.eptcomputing</groupId>
       <artifactId>neo4j-resources</artifactId>
-      <version>1.0-SNAPSHOT</version>
+      <version>1.0-for-scala-2.8.0.Beta1-SNAPSHOT</version>
     </dependency>
 
-If you don't use Maven, take `target/neo4j-resources-1.0-SNAPSHOT.jar` and all of its dependencies,
+If you don't use Maven, take `target/neo4j-resources-1.0-for-scala-2.8.0.Beta1-SNAPSHOT` and all of its dependencies,
 and add them to your classpath.
 
 To use the project in Eclipse, you must have the Eclipse Scala plugin installed.
