@@ -3,11 +3,10 @@ package com.eptcomputing.neo4j
 import org.scalatest.Spec
 import org.scalatest.matchers.ShouldMatchers
 import org.junit.runner.RunWith
-import com.jteigen.scalatest.JUnit4Runner
-
+import org.scalatest.junit.JUnitRunner
 import org.neo4j.graphdb._
 
-@RunWith(classOf[JUnit4Runner])
+@RunWith(classOf[JUnitRunner])
 class NeoConvertersSpec extends Spec with ShouldMatchers with Neo4jConverters {
   describe("NeoConverters") {
     it("should create a new relationship in --> relType --> notation") {
