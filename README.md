@@ -37,10 +37,10 @@ To use this library in your projects, add the following to the `dependencies` se
     <dependency>
       <groupId>com.eptcomputing</groupId>
       <artifactId>neo4j-resources</artifactId>
-      <version>1.0-for-scala-2.8.0.Beta1-SNAPSHOT</version>
+      <version>1.0</version>
     </dependency>
 
-If you don't use Maven, take `target/neo4j-resources-1.0-for-scala-2.8.0.Beta1-SNAPSHOT` and all of its dependencies,
+If you don't use Maven, take `target/neo4j-resources-1.0` and all of its dependencies,
 and add them to your classpath.
 
 To use the project in Eclipse, you must have the Eclipse Scala plugin installed.
